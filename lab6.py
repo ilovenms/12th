@@ -44,6 +44,7 @@ def result_of_shape(shape):
             # 2πrh +2πr2
             print(f"Area of cylinder: {2*math.pi*radius*height + 2*math.pi*radius*2}")
         elif type_of_calc == "peri":
-            # 2(2r + h) or 4r + 2h.
-            side = int(input("S: "))
-            print(f"Peri of cylinder : {height+breadth+side}")
+            print(f"Peri of cylinder : {2*(2*radius+height)}")
+
+shape = str(input("Shape: "))
+result_of_shape(shape)
